@@ -83,7 +83,6 @@ touch: cannot touch ‘/mnt/nfs-share/test’: Permission denied
 ````
 
  - Пытаемся записать в директорию /mnt/nfs-share/upload
- - 
   ````
  [vagrant@client ~]$ touch /mnt/nfs-share/upload/test
   
