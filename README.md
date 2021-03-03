@@ -47,7 +47,7 @@
    systemctl enable rpcbind
   ````
 
-  - Создадим точку монтирования.
+- Создадим точку монтирования.
 
   ````
  mkdir /mnt/nfs-share
