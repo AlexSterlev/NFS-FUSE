@@ -63,7 +63,7 @@ echo "192.168.1.1:/var/nfs/    /mnt/nfs-share/ nfs auto,nofail,vers=3,udp  0 0" 
   - Монтируем
 
   ````
-   mount -a
+  mount -a
   ````
 
 ### Тестируем
@@ -71,7 +71,6 @@ echo "192.168.1.1:/var/nfs/    /mnt/nfs-share/ nfs auto,nofail,vers=3,udp  0 0" 
   ````
   mount | grep nfs
   ````
-
   - Пытаемся записать в коревую директорию 
 
   ````
