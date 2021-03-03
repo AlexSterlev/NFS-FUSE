@@ -88,4 +88,4 @@ touch: cannot touch ‘/mnt/nfs-share/test’: Permission denied
  [vagrant@client ~]$ touch /mnt/nfs-share/upload/test
   
 ````
- - Успешно
+ Успешно
