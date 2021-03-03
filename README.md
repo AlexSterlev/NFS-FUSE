@@ -51,6 +51,7 @@
 
   ````
  mkdir /mnt/nfs-share
+ 
   ````
   
   - Отредактируем fstab для автоматического монтирования.  
@@ -58,29 +59,34 @@
   ````
 echo "##### NFS MOUNT #####" >> /etc/fstab
 echo "192.168.1.1:/var/nfs/    /mnt/nfs-share/ nfs auto,nofail,vers=3,udp  0 0" >> /etc/fstab
+
   ````
 
   - Монтируем
 
   ````
   mount -a
+  
   ````
 
 ### Тестируем
 
   ````
   mount | grep nfs
+  
   ````
   - Пытаемся записать в коревую директорию 
 
   ````
 touch /mnt/nfs-share/test
 touch: cannot touch ‘/mnt/nfs-share/test’: Permission denied
+
   ````
 
  - Пытаемся записать в директорию /mnt/nfs-share/upload
  - 
   ````
  [vagrant@client ~]$ touch /mnt/nfs-share/upload/test
+ 
   ````
  - Успешно
